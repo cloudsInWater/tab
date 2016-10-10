@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src='jquery.js'></script>
+	<script src='MyTable.js'></script>
+	<link rel="stylesheet" href="MyTable.css">
+	<style>
+		*{margin:0;padding:0;}
+	</style>
+	<script>
+		var data=[
+			{name:'歌曲一',singer:'张三',date:'20151010'},
+			{name:'歌曲二',singer:'李四',date:'20140101'},
+			{name:'冰雨',singer:'刘德华',date:'19921001'},
+			{name:'下沙',singer:'游鸿鸣',date:'20000210'}
+		];
+		var data2=[
+			{name:'张三',address:'北京',sex:'男'},
+			{name:'李四',address:'上海',sex:'女'},
+			{name:'王五',address:'广州',sex:'男'},
+			{name:'马六',address:'深圳',sex:'女'}
+		];
+		$(function(){
+			MyTable.show({
+				titles:['名字','地址','性别'],
+				data:data,
+				con:$('#container'),
+				hasCURD:true
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id='container'>
+	</div>
+</body>
+</html>

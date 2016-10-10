@@ -1,0 +1,34 @@
+.MyTable{
+	border:1px solid ##0094ff;
+	border-collapse: collapse;
+	margin:50px auto;
+}
+.MyTable thead tr{
+	background-color:darkblue;
+	font-weight:bolder;
+	color:white;
+}
+.MyTable thead td{font-size: 18px}
+.MyTable tbody tr:nth-child(even){
+	background-color:lightblue;
+	color:white;
+}
+.MyTable tbody tr:hover{
+	background-color:orange;
+}
+.MyTable td{
+	border:1px solid #0094ff;
+	width:200px;
+	height:80px;
+	line-height:40px;
+	text-align:center;
+}
+.MyTable tbody td{
+	font-weight: bold;
+}
+.MyTable a{
+	margin-right:10px;
+}
+.MyTable input{
+	width:80px;
+}
